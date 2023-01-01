@@ -5,7 +5,7 @@ import josh from "../images/undraw_pic_profile_re_7g2h.svg";
 
 const Testimonial = () => {
   return (
-    <div className="mt-32 max-w-6xl px-6 text-center">
+    <div className="container mx-auto mt-32 max-w-6xl px-6 text-center">
       <h2 className="font-bold text-4xl text-center ">
         What's different about Manage?
       </h2>
