@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.hamburger > span {
+  position: absolute;
+  width: 24px;
+  background-color: black;
+  height: 1.5px;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+.hamburger > span:nth-of-type(2) {
+  transform: translateY(7px);
+}
+.hamburger > span:nth-of-type(3) {
+  transform: translateY(14px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+.open > span:nth-of-type(1) {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open > span:nth-of-type(2) {
+  display: none;
+}
+.open > span:nth-of-type(3) {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
