@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="relative container p-6 mx-auto">
       <div className="flex justify-between items-center">
-        <Link to="/home">
+        <Link to="/">
           <img src={logo} alt="" />
         </Link>
         <ul className="hidden md:flex space-x-6 ">

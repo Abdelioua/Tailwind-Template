@@ -14,7 +14,7 @@ const Footer = () => {
         Copyright &copy; 2022 - All rights reserved
       </p>
       <div className="flex flex-col justify-between mx-auto md:mx-0">
-        <Link className="text-white" to="/home">
+        <Link className="text-white" to="/">
           <img src={logo} alt="" />
         </Link>
         <ul className="flex space-x-3 mx-auto mt-3">
